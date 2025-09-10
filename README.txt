@@ -1,5 +1,12 @@
-# HILAN Prototype – Human-in-the-Loop AI
-Streamlit prototype app where:
-- Users submit a question and get an AI draft.
-- Validators review the draft (approve/edit/reject).
-- Verified answers are shown with a ✅ badge.
+# HILAN – Human-in-the-Loop AI (Prototype)
+
+Streamlit demo where:
+- Users submit a question → AI generates a draft (OpenAI).
+- Validators review (approve / edit / reject) → earn micro-rewards.
+- Users get **Human-Verified** answers.
+
+## Run locally
+```bash
+pip install -r requirements.txt
+export OPENAI_API_KEY=your_key_here  # or use Streamlit secrets
+streamlit run hilan_app.py
